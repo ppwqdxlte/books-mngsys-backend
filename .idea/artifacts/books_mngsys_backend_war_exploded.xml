@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="books-mngsys-backend:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/books_mngsys_backend_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="books-mngsys-backend/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="books-mngsys-backend" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

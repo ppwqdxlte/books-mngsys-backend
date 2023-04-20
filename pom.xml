@@ -18,6 +18,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
         <version>2.6.0</version>
+        <relativePath /><!-- repository中查找parent -->
     </parent>
 
     <properties>
