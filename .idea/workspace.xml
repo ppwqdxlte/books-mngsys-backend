@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085e7b86-b133-4631-9086-f4f13372fb36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/controller/SysUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/entity/PageParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/entity/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/mapper/SysUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/service/SysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/mapper/system/SysUserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/BooksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/BooksApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/laowang/booksmngsysbackend/utils/ResultVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/laowang/booksmngsysbackend/utils/ResultVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/org/laowang/booksmngsysbackend/web/system/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +103,7 @@
       <updated>1681967599251</updated>
       <workItem from="1681967601070" duration="20144000" />
       <workItem from="1682125544559" duration="9680000" />
-      <workItem from="1682315926022" duration="6756000" />
+      <workItem from="1682315926022" duration="11978000" />
     </task>
     <servers />
   </component>

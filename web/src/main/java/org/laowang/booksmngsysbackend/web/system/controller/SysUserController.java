@@ -4,6 +4,9 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.laowang.booksmngsysbackend.utils.ResultUtils;
 import org.laowang.booksmngsysbackend.utils.ResultVo;
 import org.laowang.booksmngsysbackend.web.system.entity.PageParam;
@@ -24,6 +27,7 @@ import java.util.Objects;
  */
 @RestController
 @RequestMapping("/api/system/user")
+@Api(tags = "系统管理",value = "用户管理")
 public class SysUserController {
     @Autowired
     private SysUserService sysUserService;
@@ -35,6 +39,7 @@ public class SysUserController {
      * @author Laowang
      * @create 2023/4/24
      **/
+    @ApiOperation(value = "添加用户",notes = "添加一个用户，传入用户名姓名密码邮箱性别等等")
     @PostMapping
     public ResultVo addUser(@RequestBody SysUser user) {
         // 判断账户是否被占用
@@ -64,6 +69,7 @@ public class SysUserController {
      * @author Laowang
      * @create 2023/4/24
      **/
+    @ApiOperation(value = "编辑用户",notes = "修改用户信息，如果账号占用就失败了")
     @PutMapping
     public ResultVo editUser(@RequestBody SysUser user) {
         // 判断账户是否被占用
@@ -91,6 +97,9 @@ public class SysUserController {
      * @author Laowang
      * @create 2023/4/24
      **/
+    @ApiOperation(value = "删除用户",notes = "根据ID删除用户")
+    @ApiImplicitParam(paramType = "path",name = "userId",value = "用户id",required = true
+            ,dataType = "Long",dataTypeClass = Long.class)
     @DeleteMapping("/{userId}")
     public ResultVo deleteUser(@PathVariable("userId") Long userId){
         boolean removeById = sysUserService.removeById(userId);
@@ -107,6 +116,7 @@ public class SysUserController {
      * @author Laowang
      * @create 2023/4/24
      **/
+    @ApiOperation(value = "分页查询用户列表",notes = "按分页参数分页查询")
     @GetMapping
     public ResultVo getList(PageParam pageParam){
         IPage<SysUser> page = sysUserService.list(pageParam);
